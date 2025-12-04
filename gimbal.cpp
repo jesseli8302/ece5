@@ -73,7 +73,7 @@ void dmpDataReady() {
   mpuInterrupt = true;
 }
 
-// PID controll function
+// PID controller function
 // Calculates and returns the correction command for a single axis
 float computePID(float currentAngle, float setpoint, float Kp, float Kd, float& lastError, float& lastDerivative) {
     float error = setpoint - currentAngle;
